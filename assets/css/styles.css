@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --primary-color: teal;
+  --secondary-color: #b2babb;
+  --tertiary-color: #20292f;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  border: 4px solid var(--tertiary-color);
+}
+
+header h1 {
+  padding: 25px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-style: oblique;
+  margin-left: 250px;
+  box-shadow: 0 0 15px var(--tertiary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 3px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-style: oblique;
+  color: var(--secondary-color);
+  padding: 25px 20px;
+  font-size: 1.2vw;
+}
+
+nav a:hover {
+  background: var(--tertiary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.image {
+  width: 230px;
+  height: 157px;
+  border: 5px solid var(--tertiary-color);
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.jumbotron {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-section h2 {
+  color: var(--tertiary-color);
+  font-size: 75px;
+}
+
+#about h2 {
+  margin: 10px 35px;
+}
+
+#about p {
+  font-size: large;
+}
