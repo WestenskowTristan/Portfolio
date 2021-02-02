@@ -11,7 +11,7 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: whitesmoke;
+  background-color: var(--secondary-color);
 }
 
 header {
@@ -53,6 +53,10 @@ nav a:hover {
   border-radius: 5px;
   text-shadow: 0 0 10px var(--primary-color);
 }
+.main {
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
 
 .image {
   width: 230px;
@@ -69,6 +73,11 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
+.page-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .page-section h2 {
   color: var(--tertiary-color);
   font-size: 75px;
@@ -80,17 +89,78 @@ nav a:hover {
 }
 
 #about p {
-  font-size: large;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: larger;
+  margin: 20px 300px 25px 300px;
+  border: 5px solid var(--primary-color);
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+  height: 150px;
+  padding: 25px;
+}
+
+#about p span {
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 20px;
+}
+
+#work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 300px;
 }
 
 #work h2 {
-  margin: 10px 35px;
+  margin: 10px 35px 100px;
+  position: absolute;
+  left: 10px;
 }
 
 .flex-container {
-  background: chartreuse;
+  display: flex;
+  width: 545px;
+  margin-left: 10px;
+  margin-top: 125px;
+  padding-top: 50px;
+  border: 5px solid var(--primary-color);
+  background-image: url(../imgs/02-run-buddy.jpg);
+}
+
+.flex-item {
+  height: 120px;
+  width: 250px;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 #contact {
-  background-color: aquamarine;
+  padding-top: 60px;
+  bottom: 0px;
+  margin-left: 25px;
+}
+
+.contact-info {
+  position: relative;
+  width: 850px;
+  top: 135px;
+  right: 545px;
+  flex-wrap: wrap;
+  font-size: 25px;
+}
+
+.info {
+  display: inline-block;
+  justify-content: space-around;
+  height: 100%;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background: var(--tertiary-color);
+}
+
+.info:hover {
+  background: var(--primary-color);
 }
