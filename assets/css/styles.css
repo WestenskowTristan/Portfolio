@@ -71,6 +71,7 @@ nav a:hover {
 .jumbotron {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .page-section {
@@ -112,20 +113,22 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin-left: 300px;
+  margin-top: 25px;
 }
 
 #work h2 {
-  margin: 10px 35px 100px;
-  position: absolute;
-  left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto 295px auto 0px;
+  padding: 35px;
 }
 
 .flex-container {
-  display: flex;
   width: 545px;
   margin-left: 10px;
   margin-top: 125px;
-  padding-top: 50px;
+  padding-top: 150px;
   border: 5px solid var(--primary-color);
   background-image: url(../imgs/02-run-buddy.jpg);
 }
@@ -133,22 +136,32 @@ nav a:hover {
 .flex-item {
   height: 120px;
   width: 250px;
-  text-decoration: none;
   background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 155px;
+  background: var(--primary-color);
+}
+
+footer a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  font-style: oblique;
+  text-shadow: 0 0 10px var(--secondary-color);
+  text-decoration: none;
   color: var(--tertiary-color);
 }
 
-#contact {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 60px;
-  bottom: 0px;
-  margin-left: 25px;
-}
-
-.contact-info {
-}
-
-.info:hover {
-  background: var(--primary-color);
+footer a:hover {
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+  border-radius: 3px;
 }
