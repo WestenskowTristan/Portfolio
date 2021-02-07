@@ -9,7 +9,19 @@
   <body>
     <!-- navigation -->
     <header>
-      <h1>Tristan Westenskow's Portfolio</h1>
+      <!-- Image -->
+      <div class="left-header-container">
+        <div class="image-container">
+          <img
+            class="image"
+            src="./assets/imgs/IMG_0554 (1).JPG"
+            alt="A photo of Tristan Westenskow"
+          />
+        </div>
+        <div class="main-header-container">
+          <h1>Tristan Westenskow's Portfolio</h1>
+        </div>
+      </div>
       <nav>
         <a href="#about">About Me</a>
         <a href="#work">My Work</a>
@@ -20,19 +32,10 @@
 
     <!-- Main content -->
     <main class="jumbotron">
-      <!-- Image -->
-      <div>
-        <img
-          class="image"
-          src="./assets/imgs/IMG_0554 (1).JPG"
-          alt="A photo of Tristan Westenskow"
-        />
-      </div>
-
       <!-- About me section -->
       <section class="page-section" id="about">
         <h2>About Me!</h2>
-        <div>
+        <div class="about-subtext-container">
           <p>
             I am a student web developer currently attending a bootcamp and this
             is my starting portfolio. Learning all about web development is so
@@ -52,16 +55,18 @@
       <!-- Work section container -->
       <section class="page-section" id="work">
         <h2>My Work</h2>
-        <div class="flex-container">
-          <a
-            href="https://westenskowtristan.github.io/Run-Buddy/"
-            class="flex-item run-buddy"
-          >
-            <div>
-              <h3>Run Buddy</h3>
-              <span>HTML/CSS</span>
-            </div>
-          </a>
+        <div class="run-buddy-container">
+          <div class="flex-container">
+            <a
+              href="https://westenskowtristan.github.io/Run-Buddy/"
+              class="flex-item run-buddy"
+            >
+              <div>
+                <h3>Run Buddy</h3>
+                <span>HTML/CSS</span>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
